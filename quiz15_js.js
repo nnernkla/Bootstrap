@@ -1,4 +1,4 @@
-var movies = [{
+/*var movies = [{
 				title: "Harry Potter",
 				rating: 5, 
 				hasWatch: true
@@ -18,7 +18,7 @@ var movies = [{
 			  	rating: 4,
 			  	hasWatch: false
 			  }]
-
+*/
 /*function movieList(){
 	movies.forEach(function(list){
 		var result = "You have ";
@@ -37,7 +37,7 @@ var movies = [{
 
 //function above is working just fine. But you also can do like this
 
-	function buildString(list){
+/*	function buildString(list){
 		var result = "You have ";
 		if(list.hasWatch){
 			result += "watched ";
@@ -55,3 +55,17 @@ var movies = [{
 	movies.forEach(function(list){
 		console.log(buildString(list));
 	});
+*/
+
+//How to use method inside object!
+
+var comments = {};
+comments.data = ["Good Job!", "Bye bye!", "Lame ba the klgf", "klopp ky unjs ma"];
+
+comments.print = function(){
+	this.data.forEach(function(list){
+		console.log(list);
+	});
+}
+
+comments.print();
